@@ -17,19 +17,21 @@ max_batch_size = 1
 max_concurrency = 1
 max_retries = 1
 
-[vars]
-BOT_USERNAME = ""
-EMOJI_LIST = "👍❤🔥🥰👏😁🎉🤩🙏👌🕊😍🐳❤‍🔥💯⚡🏆"
-RANDOM_LEVEL = "0"
-RESTRICTED_CHATS = ""
-ADMIN_IDS = ""
-UPDATES_URL = "https://t.me/PythonBotz"
-SUPPORT_URL = ""
-START_ANIMATION = ""
-DONATE_ANIMATION = ""
-LOG_LEVEL = "info"
-AUTO_SET_WEBHOOK = "true"
-UPLOAD_URL = ""
 
+
+[vars]
+BOT_USERNAME = "ReactionsXBot"
+EMOJI_LIST = "👍  ❤️ 🔥 🥰 👏 😁 🤔 🤯 🎉 🤩  🙏 👌 🕊 🥱 😍 🐳 ❤️‍🔥 🌚 💯 🤣 😂  🍓 🍾 💋 😎 👨‍💻 👀 🎃 🙈 😇 😨 🤝 ✍️ 🤗 🫡 🎅 🎄 ☃️ 💅 🤪 🗿 🆒 💘 🙉 🦄 😘 💊 🙊"
+RANDOM_LEVEL = "0"
+RESTRICTED_CHATS = "textify"
+ADMIN_IDS = "7387793694"
+UPDATES_URL = "https://t.me/+V6ZWf2k9vV1kZmI1"
+SUPPORT_URL = "https://t.me/TheComGC"
+START_ANIMATION = "https://graph.org/file/4bf5f939d9677934dead3-41662e678f6eca34b4.mp4"
+DONATE_ANIMATION = "https://graph.org/file/e64807a85f15706730cb2-b2e366b966eede7966.mp4"
+LOG_LEVEL = "info"
+BOT_TOKEN = "YOUR_BOT_TOKEN"
+UPLOAD_URL = ""
+AUTO_SET_WEBHOOK = "true"
 # BOT_TOKEN is intentionally not committed as a plain variable.
 # Enter it as the secret during deployment.
