@@ -131,7 +131,7 @@ The bot sends the configured notification, approves the request, then sends an a
 
 ### Deploy button
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/a-if/Reactions/tree/main)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/8toy/AdvanceBot/tree/main)
 
 The Worker uses:
 
