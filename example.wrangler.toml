@@ -1,0 +1,14 @@
+name = "auto-reaction-bot"
+main = "src/index.js"
+compatibility_date = "2024-02-08"
+
+[vars]
+BOT_TOKEN = "12345678:PAST-YOUR-BOT-TOKEN-HERE"
+BOT_USERNAME = "Auto_ReactionBOT"
+EMOJI_LIST = "👍❤🔥🥰👏😁🎉🤩🙏👌🕊😍🐳❤‍🔥💯⚡🏆"
+RANDOM_LEVEL = "2"
+RESTRICTED_CHATS = "1234,5678"
+LOG_LEVEL = "info"
+ADMIN_IDS = "123456789"
+UPDATES_URL = "https://t.me/PythonBotz"
+SUPPORT_URL = ""

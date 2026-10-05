@@ -1,0 +1,66 @@
+{
+  "name": "auto-reaction-bot",
+  "version": "1.1.1",
+  "description": "A Telegram Auto Reaction Bot for Cloudflare Workers, Node.js, Docker and Render.",
+  "main": "api/index.js",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "start": "node api/index.js",
+    "vercel": "vercel dev",
+    "cloudflare": "wrangler dev",
+    "build": "node --check api/worker.js",
+    "deploy": "npx --yes wrangler deploy"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongodb": "^7.6.0"
+  },
+  "engines": {
+    "node": ">=20.x"
+  },
+  "cloudflare": {
+    "bindings": {
+      "BOT_TOKEN": {
+        "description": "Required Telegram Bot API token from @BotFather. Keep this secret."
+      },
+      "BOT_USERNAME": {
+        "description": "Telegram bot username without @, for example ReactionsXBot."
+      },
+      "EMOJI_LIST": {
+        "description": "Emoji reactions the bot can use. Leave the default list or replace it with your preferred emojis."
+      },
+      "ADMIN_IDS": {
+        "description": "Comma-separated Telegram user IDs allowed to use /stats and /broadcast. Optional."
+      },
+      "RESTRICTED_CHATS": {
+        "description": "Comma-separated Telegram chat IDs where reactions should be disabled. Optional."
+      },
+      "RANDOM_LEVEL": {
+        "description": "Reaction randomness level from 0 to 10. 0 reacts to every eligible message."
+      },
+      "UPDATES_URL": {
+        "description": "Telegram URL used by the Updates button in /start."
+      },
+      "SUPPORT_URL": {
+        "description": "Optional Telegram support URL used by the Support button."
+      },
+      "START_ANIMATION": {
+        "description": "Optional direct animation URL or Telegram file_id for /start."
+      },
+      "DONATE_ANIMATION": {
+        "description": "Optional direct animation URL or Telegram file_id for /donate."
+      },
+      "LOG_LEVEL": {
+        "description": "Logging level: silent, error, warn, info or debug."
+      },
+      "AUTO_SET_WEBHOOK": {
+        "description": "Automatically set Telegram webhook to the deployed Worker URL when the Worker is opened."
+      },
+      "UPLOAD_URL": {
+        "description": "Optional URL used by the Upload/Add button in the bot UI."
+      }
+    }
+  }
+}

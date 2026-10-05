@@ -1,0 +1,15 @@
+{
+  "name": "Telegram Auto Reaction Bot",
+  "description": "Multi-platform Telegram Auto Reaction Bot with group settings, welcome messages, join-request automation and MongoDB support.",
+  "repository": "https://github.com/a-if/Reactions",
+  "keywords": ["telegram", "bot", "reactions", "mongodb", "cloudflare"],
+  "env": {
+    "BOT_TOKEN": { "description": "Telegram BotFather token", "required": true },
+    "BOT_USERNAME": { "description": "Bot username without @", "required": true },
+    "MONGODB_URL": { "description": "MongoDB connection URI", "required": true },
+    "MONGODB_DB": { "description": "MongoDB database name", "value": "reaction-bot" },
+    "ADMIN_IDS": { "description": "Comma-separated global admin Telegram IDs", "required": false },
+    "WEBHOOK_URL": { "description": "Public HTTPS URL of the app", "required": false }
+  },
+  "formation": { "web": { "quantity": 1, "size": "basic" } }
+}

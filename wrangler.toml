@@ -1,0 +1,35 @@
+name = "auto-reaction-bot"
+main = "api/worker.js"
+compatibility_date = "2026-10-02"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "reaction-bot"
+database_id = "demo"
+
+[[queues.producers]]
+binding = "BROADCAST_QUEUE"
+queue = "broadcast-queue"
+
+[[queues.consumers]]
+queue = "broadcast-queue"
+max_batch_size = 1
+max_concurrency = 1
+max_retries = 1
+
+[vars]
+BOT_USERNAME = ""
+EMOJI_LIST = "👍❤🔥🥰👏😁🎉🤩🙏👌🕊😍🐳❤‍🔥💯⚡🏆"
+RANDOM_LEVEL = "0"
+RESTRICTED_CHATS = ""
+ADMIN_IDS = ""
+UPDATES_URL = "https://t.me/PythonBotz"
+SUPPORT_URL = ""
+START_ANIMATION = ""
+DONATE_ANIMATION = ""
+LOG_LEVEL = "info"
+AUTO_SET_WEBHOOK = "true"
+UPLOAD_URL = ""
+
+# BOT_TOKEN is intentionally not committed as a plain variable.
+# Enter it as the secret during deployment.

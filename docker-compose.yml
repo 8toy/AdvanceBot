@@ -1,0 +1,13 @@
+services:
+  auto-reaction-bot:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "${EXPOSE_PORT:-3000}:3000"
+    env_file:
+      - .env
+    environment:
+      PORT: 3000
+      NODE_ENV: production
+    volumes:
+      - ./data:/app/data

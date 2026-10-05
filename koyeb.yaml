@@ -1,0 +1,11 @@
+services:
+  - name: auto-reaction-bot
+    type: web
+    run_command: npm start
+    ports:
+      - port: 3000
+        protocol: http
+    health_checks:
+      - path: /health
+        port: 3000
+        protocol: http
